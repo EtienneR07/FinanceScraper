@@ -1,0 +1,5 @@
+{'symbol': 'goog', 'pe': '29.69', 'priceToBook': '4.43', 'debtToEquity': '11.70'},
+{'symbol': 'meta', 'pe': '38.92', 'priceToBook': '2.50', 'debtToEquity': '21.70'},
+{'symbol': 'amzn', 'pe': 'N/A', 'priceToBook': '5.89', 'debtToEquity': '106.11'},
+{'symbol': 'tsla', 'pe': '64.70', 'priceToBook': '8.72', 'debtToEquity': '12.86'},
+{'symbol': 'nflx', 'pe': '46.81', 'priceToBook': '6.32', 'debtToEquity': '81.49'},
