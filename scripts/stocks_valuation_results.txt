@@ -1,2 +1,0 @@
-{'symbol': 'a', 'pe': '30.92', 'priceToBook': '42.84', 'debtToEquity': '199.42', 'currentRatio': '0.99'},
-{'symbol': 'aa', 'pe': '30.92', 'priceToBook': '42.84', 'debtToEquity': '199.42', 'currentRatio': '0.99'},

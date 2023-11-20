@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import time
 from random import randint
-import json
-import os
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
@@ -11,7 +9,7 @@ headers = {
 
 
 def extract(symbol):
-    url = f"https://www.marketwatch.com/investing/stock/aapl/company-profile?mod=mw_quote_tab"
+    url = f"https://www.marketwatch.com/investing/stock/{symbol}/company-profile?mod=mw_quote_tab"
     page = requests.get(url, headers=headers)
     soup = BeautifulSoup(page.text, 'html.parser')
     tables = soup.find_all('table', 'table value-pairs no-heading')
