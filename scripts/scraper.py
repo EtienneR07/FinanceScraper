@@ -12,11 +12,14 @@ def try_get(list, name, index, index2):
     if index >= len(list):
         return ''
     else:
-        spans = list[index].find_all(name)
-        if index2 >= len(spans):
+        try:
+            spans = list[index].find_all(name)
+            if index2 >= len(spans):
+                return ''
+            else:
+                return spans[index2].text
+        except Exception as e:
             return ''
-        else:
-            return spans[index2].text
 
 
 def extractOverview(symbol):
@@ -68,8 +71,8 @@ with open(stock_symbols_path, "r") as stock_symbols:
 
 for i in range(last_processed_index, len(lines)):
     try:
-        sleepTime1 = randint(5, 10)
-        sleepTime2 = randint(2, 6)
+        sleepTime1 = randint(6, 10)
+        sleepTime2 = randint(3, 5)
         time.sleep(sleepTime1)
         result_from_overview = extractOverview(lines[i].strip())
         time.sleep(sleepTime2)
